@@ -56,13 +56,13 @@ class Sparklines extends React.Component {
 
         return (
             <svg {...svgOpts}>
-                {
-                    React.Children.map(this.props.children, function(child) {
-                        return React.cloneElement(child, { data, points, width, height, margin });
-                    })
-                }
-            </svg>
-        );
+        {
+            React.Children.map(this.props.children, function(child) {
+                return React.cloneElement(child, { data, points, width, height, margin });
+            })
+        }
+    </svg>
+    );
     }
 }
 

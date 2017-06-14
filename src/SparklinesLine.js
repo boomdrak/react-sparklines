@@ -42,14 +42,14 @@ export default class SparklinesLine extends React.Component {
         };
 
         const tooltips = points.map((p, i) => {
-          return (<circle
-            cx={p.x}
-            cy={p.y}
-            r={2}
-            style={fillStyle}
-            onMouseEnter={(e) => onMouseMove('enter', data[i], p)}
-            onClick={(e) => onMouseMove('click', data[i], p)}
-          />)
+            return (<circle
+                cx={p.x}
+                cy={p.y}
+                r={2}
+                style={fillStyle}
+                onMouseEnter={(e) => onMouseMove('enter', data[i], p)}
+                onClick={(e) => onMouseMove('click', data[i], p)}
+            />)
         });
 
         return (
